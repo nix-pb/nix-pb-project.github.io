@@ -116,13 +116,13 @@
             max-width: 550px;
             height: 100%;
             max-height: 350px;
-            margin: 50px auto 0;
-            position: relative;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.5);
+            transform-origin: 0 0;
             background: #435d77;
             border-radius: 0 0 40px 40px;
-            margin-top: 300px;
-            transform: scale(0.5);
-            transform-origin: 0 0;
         }
 
         #button_open_envelope 
@@ -170,7 +170,7 @@
         {
             font-family: cursive;
             font-size: 18px;
-            color: #94908d5e;
+            color: #6f6761;
             text-align: left;
             border-radius: 5px;
             margin-left: 80px;
@@ -436,7 +436,7 @@
         .decisionButton 
         {
             background: transparent;
-            color: #94908d5e;
+            color: #6f6761;
             cursor: pointer;
             font-family: cursive;
             font-size: 18px;
@@ -446,11 +446,12 @@
         }
 
 
+
     </style>
 </head>
 <body >
 
-        <div class="frame" id="envelope" style="display: none;" >
+        <div class="frame" id="envelope"  >
 
             <div id="button_open_envelope">
                 &#9829
