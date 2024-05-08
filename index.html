@@ -745,6 +745,7 @@
             message.classList.add('pull');
         }, 1500);
   
+        heartButton.removeEventListener('click', arguments.callee);
  
         heartButton.disabled = true;
         heartButton.style.color = '#e62828';
